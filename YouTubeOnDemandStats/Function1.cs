@@ -14,9 +14,9 @@ namespace YouTubeOnDemandStats
 {
 	public static class YouTubeStatsFunction
     {
-        [FunctionName("GetChanneVideoStats")]
+        [FunctionName("GetChannelVideoStats")]
         public static async Task<IActionResult> GetChanneVideoStats(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "GetChanneVideoStats/{ids}")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "GetChannelVideoStats/{ids}")] HttpRequest req,
             string ids,
             ILogger log)
         {
